@@ -1,0 +1,185 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    flex-direction: column;
+    line-height: 10px;
+    font-weight: 800;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+    color: white;
+    font-size: 19px;
+}
+li:hover{
+    color: #FF9014;
+    transition: 0.30s all;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+
+}
+
+h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+    line-height: 1.1;
+
+}
+
+h3{
+    color: #FF9014;
+    font-size: 30px;
+
+}
+
+h4{
+    font-size: 20px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 20px;
+    line-height: 20px;
+    max-height: 500px;
+
+}
+
+img{
+    width: 700px;
+
+}
+
+h4{
+    display: flex;
+    flex-direction:row;
+}
+
+.compre {
+    padding: 1rem;
+    background-color: #FF9014;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+
+    font-size: 1rem;
+    width: fit-content;
+  }
+  
+  .detalhes {
+    font-size: 0.5rem 1rem;
+    color: white;
+
+    position: relative;
+    width: fit-content;
+  }
+  
+  .detalhes::after {
+    content: '';
+    width: 0;
+    transition: width .2s ease-in-out;
+    margin-top: 2px;
+    height: 2px;
+    display: block;
+    background-color: #FF9014;
+    position: absolute;
+  }
+  
+  .detalhes:hover::after {
+    width: 100%;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  #footer {
+    padding: 3rem 0;
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: 100px;
+  }
+  
+  #footer span {
+    display: inline;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
+
+
+
+#carousel-top{
+    color: #FF9014;
+    justify-content: center;
+    margin-top: 12%;
+    margin-left: 5%;
+}
+
+
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 12%;
+
+    
+  }
+
+.carousel-slide {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 300px;
+    height: auto;
+
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FF9014;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
